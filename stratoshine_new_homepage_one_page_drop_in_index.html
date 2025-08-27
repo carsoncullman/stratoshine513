@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Stratoshine Auto Detailing | Cincinnati & Northern Kentucky</title>
+  <meta name="description" content="Mobile car detailing serving Cincinnati & Northern Kentucky. Interior refreshes from $150 and complete details from $200. We come to you — book Stratoshine today." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300..800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Manrope', 'ui-sans-serif', 'system-ui'] },
+          colors: {
+            brand: {
+              50:'#f5f3ff',100:'#ede9fe',200:'#ddd6fe',300:'#c4b5fd',400:'#a78bfa',500:'#8b5cf6',600:'#7c3aed',700:'#6d28d9',800:'#5b21b6',900:'#4c1d95'
+            }
+          },
+          boxShadow: { glow: '0 0 40px rgba(139,92,246,0.35)'}
+        }
+      }
+    }
+  </script>
+  <!-- Open Graph -->
+  <meta property="og:title" content="Stratoshine Auto Detailing" />
+  <meta property="og:description" content="Mobile car detailing for Cincinnati & NKY. Interior from $150, complete from $200. DM to book." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.stratoshine513.com/" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?q=80&w=1200&auto=format&fit=crop" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- JSON‑LD LocalBusiness (fill in phone when ready) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoDetailing",
+    "name": "Stratoshine Auto Detailing",
+    "url": "https://www.stratoshine513.com/",
+    "areaServed": "Cincinnati, OH; Northern Kentucky",
+    "sameAs": [
+      "https://www.instagram.com/stratoshine513/",
+      "https://www.tiktok.com/@stratoshine513"
+    ]
+  }
+  </script>
+  <style>
+    /* starry gradient background */
+    .starfield {
+      background:
+        radial-gradient(1200px 600px at 10% -20%, rgba(167,139,250,.25), transparent 60%),
+        radial-gradient(1000px 500px at 110% 20%, rgba(139,92,246,.25), transparent 60%),
+        radial-gradient(800px 400px at 50% 110%, rgba(30,27,75,.55), transparent 60%),
+        linear-gradient(180deg, #0b0b12 0%, #0a0720 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .starfield:before { /* tiny stars */
+      content: "";
+      position: absolute; inset: 0;
+      background-image: radial-gradient(white 1px, rgba(255,255,255,0) 1px);
+      background-size: 3px 3px; opacity:.15; animation: twinkle 6s linear infinite;
+    }
+    @keyframes twinkle { from{opacity:.15} 50%{opacity:.25} to{opacity:.15} }
+
+    /* frosted card */
+    .frosted { backdrop-filter: blur(10px); background: rgba(255,255,255,0.06); }
+  </style>
+</head>
+<body class="bg-[#0b0b12] text-white antialiased">
+  <!-- Mobile sticky book bar -->
+  <div class="fixed bottom-4 left-0 right-0 z-40 md:hidden px-4">
+    <div class="frosted shadow-glow rounded-2xl border border-white/10 p-3 flex items-center justify-between">
+      <div>
+        <p class="text-xs uppercase tracking-widest text-white/60">Ready when you are</p>
+        <p class="font-semibold">Book a detail</p>
+      </div>
+      <div class="flex gap-2">
+        <a href="https://www.instagram.com/stratoshine513" target="_blank" class="px-3 py-2 rounded-xl bg-brand-600 hover:bg-brand-500">DM</a>
+        <a href="#book" class="px-3 py-2 rounded-xl border border-white/20">Form</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <header class="sticky top-0 z-30 backdrop-blur border-b border-white/10 bg-black/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="#home" class="font-extrabold tracking-tight text-xl">Strato<span class="text-brand-400">shine</span></a>
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-white/80">
+        <a href="#services" class="hover:text-white">Services</a>
+        <a href="#packages" class="hover:text-white">Packages</a>
+        <a href="#gallery" class="hover:text-white">Gallery</a>
+        <a href="#faq" class="hover:text-white">FAQ</a>
+        <a href="#book" class="px-4 py-2 rounded-xl bg-brand-600 hover:bg-brand-500 text-white shadow-glow">Book</a>
+      </nav>
+      <button id="menuBtn" class="md:hidden inline-flex items-center gap-2 px-3 py-2 rounded-lg border border-white/20">
+        <span>Menu</span>
+      </button>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden border-t border-white/10 bg-black/70">
+      <nav class="px-4 py-3 flex flex-col gap-3 text-white/90">
+        <a href="#services">Services</a>
+        <a href="#packages">Packages</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#faq">FAQ</a>
+        <a href="#book" class="px-4 py-2 rounded-xl bg-brand-600 text-center">Book</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="starfield relative">
+    <div class="absolute inset-0 pointer-events-none" aria-hidden="true"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28">
+      <div class="max-w-3xl">
+        <p class="text-brand-300/90 font-semibold uppercase tracking-[0.25em]">Cincinnati · Northern Kentucky</p>
+        <h1 class="mt-4 text-4xl sm:text-6xl font-extrabold leading-tight">
+          Shine that <span class="text-brand-400">hits different</span>
+        </h1>
+        <p class="mt-4 text-lg sm:text-xl text-white/80">
+          Mobile detailing that fits your life. We come to you with professional tools and products to make your daily driver feel brand new.
+        </p>
+        <div class="mt-8 flex flex-col sm:flex-row gap-3">
+          <a href="#book" class="inline-flex items-center justify-center px-6 py-3 rounded-2xl bg-brand-600 hover:bg-brand-500 text-white font-semibold shadow-glow">Book a detail</a>
+          <a href="https://www.instagram.com/stratoshine513" target="_blank" class="inline-flex items-center justify-center px-6 py-3 rounded-2xl border border-white/20 hover:bg-white/5">See work on Instagram</a>
+        </div>
+        <p class="mt-6 text-white/60 text-sm">Interior refreshes from <span class="font-semibold text-white">$150</span> · Complete details from <span class="font-semibold text-white">$200</span> (vehicle condition/size may affect final quote).</p>
+      </div>
+      <div class="mt-14 grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div class="frosted rounded-2xl border border-white/10 p-5">
+          <p class="text-white/60 text-xs">Why Stratoshine</p>
+          <p class="font-semibold mt-1">We come to you</p>
+          <p class="text-white/70 text-sm mt-1">Home, work, or anywhere with space & water/power. Flexible scheduling, real results.</p>
+        </div>
+        <div class="frosted rounded-2xl border border-white/10 p-5">
+          <p class="text-white/60 text-xs">Finish</p>
+          <p class="font-semibold mt-1">Showroom clean</p>
+          <p class="text-white/70 text-sm mt-1">Steam, extraction, and careful hand techniques restore that crisp, new‑car feel.</p>
+        </div>
+        <div class="frosted rounded-2xl border border-white/10 p-5">
+          <p class="text-white/60 text-xs">Trust</p>
+          <p class="font-semibold mt-1">Owner‑operated</p>
+          <p class="text-white/70 text-sm mt-1">One detailer — total accountability. Your car gets time, not shortcuts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="py-20 bg-gradient-to-b from-[#0b0b12] to-[#0a0a15]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl sm:text-4xl font-extrabold">Services</h2>
+      <p class="mt-2 text-white/70 max-w-2xl">Every vehicle is different. Choose exactly what you need — or pick a package below.</p>
+      <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Interior -->
+        <div class="frosted rounded-2xl border border-white/10 p-6">
+          <div class="text-brand-300">🧼</div>
+          <h3 class="mt-3 font-semibold text-lg">Interior Detailing</h3>
+          <ul class="mt-3 text-sm text-white/75 list-disc list-inside space-y-1">
+            <li>Thorough vacuum & debris removal</li>
+            <li>Steam & hot‑water extraction (as needed)</li>
+            <li>Plastics & vinyl cleaned/conditioned</li>
+            <li>Glass, vents, and touchpoints sanitized</li>
+          </ul>
+        </div>
+        <!-- Exterior -->
+        <div class="frosted rounded-2xl border border-white/10 p-6">
+          <div class="text-brand-300">✨</div>
+          <h3 class="mt-3 font-semibold text-lg">Exterior Detailing</h3>
+          <ul class="mt-3 text-sm text-white/75 list-disc list-inside space-y-1">
+            <li>Pre‑wash, foam bath, & two‑bucket hand wash</li>
+            <li>Iron & tar decon, clay (as needed)</li>
+            <li>Hand wax/sealant for gloss & protection</li>
+            <li>Wheels, tires, & trim cleaned & dressed</li>
+          </ul>
+        </div>
+        <!-- Full -->
+        <div class="frosted rounded-2xl border border-white/10 p-6">
+          <div class="text-brand-300">🚀</div>
+          <h3 class="mt-3 font-semibold text-lg">Complete Detail</h3>
+          <ul class="mt-3 text-sm text-white/75 list-disc list-inside space-y-1">
+            <li>Interior + exterior combined</li>
+            <li>Ideal for pre‑sale, road trips, or reset</li>
+            <li>Optional paint enhancement add‑on</li>
+          </ul>
+        </div>
+        <!-- Add‑ons -->
+        <div class="frosted rounded-2xl border border-white/10 p-6">
+          <div class="text-brand-300">➕</div>
+          <h3 class="mt-3 font-semibold text-lg">Popular Add‑Ons</h3>
+          <ul class="mt-3 text-sm text-white/75 list-disc list-inside space-y-1">
+            <li>Pet hair & sand removal</li>
+            <li>Ozone odor treatment</li>
+            <li>Engine bay clean & dress</li>
+            <li>Headlight restoration</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PACKAGES / PRICING -->
+  <section id="packages" class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl sm:text-4xl font-extrabold">Packages</h2>
+      <p class="mt-2 text-white/70 max-w-2xl">Transparent starting prices — final quote depends on vehicle size & condition.</p>
+      <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Interior Refresh -->
+        <div class="frosted rounded-2xl border border-white/10 p-8">
+          <p class="uppercase text-xs tracking-widest text-white/60">Interior Refresh</p>
+          <div class="flex items-end gap-2 mt-2">
+            <p class="text-4xl font-extrabold">$150</p>
+            <p class="text-white/60">from</p>
+          </div>
+          <ul class="mt-4 text-sm text-white/75 space-y-2">
+            <li>Vacuum + crevice detail</li>
+            <li>Light stain treatment & spot extraction</li>
+            <li>Interior plastics cleaned & protected</li>
+            <li>Glass streak‑free inside & out</li>
+          </ul>
+          <a href="#book" class="mt-6 inline-block px-5 py-3 rounded-xl bg-white/10 hover:bg-white/15">Book this</a>
+        </div>
+        <!-- Complete Detail -->
+        <div class="frosted rounded-2xl border border-white/10 p-8 ring-1 ring-brand-500/40">
+          <p class="uppercase text-xs tracking-widest text-brand-300">Most Popular</p>
+          <div class="flex items-end gap-2 mt-2">
+            <p class="text-4xl font-extrabold">$200</p>
+            <p class="text-white/60">from</p>
+          </div>
+          <ul class="mt-4 text-sm text-white/75 space-y-2">
+            <li>Everything in Interior Refresh</li>
+            <li>Foam wash, decon, & hand wax</li>
+            <li>Wheels/tires cleaned & dressed</li>
+            <li>Trim & door jambs cleaned</li>
+          </ul>
+          <a href="#book" class="mt-6 inline-block px-5 py-3 rounded-xl bg-brand-600 hover:bg-brand-500 shadow-glow">Book this</a>
+        </div>
+      </div>
+      <p class="text-xs text-white/50 mt-4">Large vehicles & heavy soil may require an adjusted quote. Ceramic coating & paint enhancement available upon request.</p>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="py-20 bg-gradient-to-b from-[#0a0a15] to-[#0b0b12]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl sm:text-4xl font-extrabold">Recent work</h2>
+      <p class="mt-2 text-white/70">Swap these placeholders with your own before/afters.</p>
+      <div class="mt-8 grid grid-cols-2 md:grid-cols-3 gap-3">
+        <!-- 6 placeholders -->
+        <img loading="lazy" class="rounded-xl aspect-[4/3] object-cover" src="https://images.unsplash.com/photo-1483721310020-03333e577078?q=80&w=800&auto=format&fit=crop" alt="Detailing — exterior wash" />
+        <img loading="lazy" class="rounded-xl aspect-[4/3] object-cover" src="https://images.unsplash.com/photo-1511914265872-c406725b8942?q=80&w=800&auto=format&fit=crop" alt="Interior clean" />
+        <img loading="lazy" class="rounded-xl aspect-[4/3] object-cover" src="https://images.unsplash.com/photo-1517637489-6e46196e14d4?q=80&w=800&auto=format&fit=crop" alt="Wheel detail" />
+        <img loading="lazy" class="rounded-xl aspect-[4/3] object-cover" src="https://images.unsplash.com/photo-1541921671-a99ce1018cf1?q=80&w=800&auto=format&fit=crop" alt="Foam bath" />
+        <img loading="lazy" class="rounded-xl aspect-[4/3] object-cover" src="https://images.unsplash.com/photo-1531590878845-12627191e687?q=80&w=800&auto=format&fit=crop" alt="Interior vacuum" />
+        <img loading="lazy" class="rounded-xl aspect-[4/3] object-cover" src="https://images.unsplash.com/photo-1529641484336-ef35148babf6?q=80&w=800&auto=format&fit=crop" alt="Paint enhancement" />
+      </div>
+      <div class="mt-6">
+        <a href="https://www.instagram.com/stratoshine513" target="_blank" class="inline-flex px-5 py-3 rounded-xl border border-white/20 hover:bg-white/5">More on Instagram</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-20">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl sm:text-4xl font-extrabold">FAQ</h2>
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="frosted rounded-2xl border border-white/10 p-6">
+          <p class="font-semibold">How long does a detail take?</p>
+          <p class="mt-2 text-white/70">Most interiors 1.5–3 hours; complete details 3–5 hours depending on size & condition.</p>
+        </div>
+        <div class="frosted rounded-2xl border border-white/10 p-6">
+          <p class="font-semibold">Do you need water or power?</p>
+          <p class="mt-2 text-white/70">Access to an outlet & hose helps. If you don’t have them, note it when booking so we can plan.</p>
+        </div>
+        <div class="frosted rounded-2xl border border-white/10 p-6">
+          <p class="font-semibold">What areas do you serve?</p>
+          <p class="mt-2 text-white/70">Greater Cincinnati & Northern Kentucky. Travel fees may apply for >25 miles from Harrison.</p>
+        </div>
+        <div class="frosted rounded-2xl border border-white/10 p-6">
+          <p class="font-semibold">Payment?</p>
+          <p class="mt-2 text-white/70">Cash, card, or digital wallet after final walkthrough. Deposits may be required for large jobs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section id="book" class="py-20 bg-gradient-to-b from-[#0b0b12] to-[#0a0a15]">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="frosted rounded-3xl border border-white/10 p-8">
+        <h2 class="text-3xl font-extrabold">Request a quote</h2>
+        <p class="mt-2 text-white/70">Fill this out and we’ll confirm your time. Or DM <a class="underline" href="https://www.instagram.com/stratoshine513" target="_blank">@stratoshine513</a>.</p>
+        <form class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4" method="POST" action="#" onsubmit="alert('This form is a placeholder. Replace action with Formspree/Getform/Netlify and remove this message.'); return false;">
+          <input required name="name" placeholder="Full name" class="px-4 py-3 rounded-xl bg-white/5 border border-white/10 outline-none focus:ring-2 focus:ring-brand-500" />
+          <input required type="tel" name="phone" placeholder="Phone" class="px-4 py-3 rounded-xl bg-white/5 border border-white/10 outline-none focus:ring-2 focus:ring-brand-500" />
+          <input required type="email" name="email" placeholder="Email" class="px-4 py-3 rounded-xl bg-white/5 border border-white/10 outline-none focus:ring-2 focus:ring-brand-500 sm:col-span-2" />
+          <select name="service" class="px-4 py-3 rounded-xl bg-white/5 border border-white/10 outline-none focus:ring-2 focus:ring-brand-500">
+            <option value="Interior Refresh">Interior Refresh</option>
+            <option value="Complete Detail">Complete Detail</option>
+            <option value="Exterior Only">Exterior Only</option>
+            <option value="Other">Other / Not sure</option>
+          </select>
+          <input name="vehicle" placeholder="Vehicle (year/make/model)" class="px-4 py-3 rounded-xl bg-white/5 border border-white/10 outline-none focus:ring-2 focus:ring-brand-500" />
+          <textarea name="notes" placeholder="Notes (pet hair, stains, location, etc.)" class="px-4 py-3 rounded-xl bg-white/5 border border-white/10 outline-none focus:ring-2 focus:ring-brand-500 sm:col-span-2" rows="4"></textarea>
+          <button class="mt-2 sm:mt-0 sm:col-span-2 px-6 py-3 rounded-2xl bg-brand-600 hover:bg-brand-500 font-semibold shadow-glow">Send request</button>
+        </form>
+        <div class="mt-4 text-sm text-white/60">Prefer text? Add your number here once ready: <span class="opacity-70">tel:+1-513-___-____</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-10 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+      <div>
+        <p class="font-extrabold tracking-tight text-xl">Strato<span class="text-brand-400">shine</span></p>
+        <p class="text-white/60 text-sm">Owner‑operated mobile detailing for Cincinnati & NKY.</p>
+      </div>
+      <div class="flex items-center gap-3 text-sm">
+        <a class="px-4 py-2 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10" href="https://www.instagram.com/stratoshine513" target="_blank">Instagram</a>
+        <a class="px-4 py-2 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10" href="https://www.tiktok.com/@stratoshine513" target="_blank">TikTok</a>
+        <a class="px-4 py-2 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10" href="#book">Book</a>
+      </div>
+    </div>
+    <p class="text-center text-white/40 text-xs mt-6">© <span id="y"></span> Stratoshine Auto Detailing. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // mobile menu toggle
+    const btn = document.getElementById('menuBtn');
+    const menu = document.getElementById('mobileMenu');
+    btn?.addEventListener('click', () => menu.classList.toggle('hidden'));
+    // year
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
